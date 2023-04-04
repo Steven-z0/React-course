@@ -14,7 +14,7 @@
 
     </div>
 
-    <script>
+    <script type="text/babel">
 
         const container = document.querySelector("#root");
         //raíz del documento, donde le pasamos el contenedor
@@ -22,7 +22,37 @@
         // mandamos a renderizar al html
         //tipo de etiqueta, opciones, contenido
         //root.render(React.createElement("h1",null,"hola mundo"));
-        root.render(React.createElement("div",null,React.createElement("h1",null,"Hola mundo dentro de un div")))
+        //root.render(React.createElement("div",null,React.createElement("h1",null,"Hola mundo dentro de un div")))
+
+        //componetes en react
+        class Listado extends React.Component {
+            render(){
+                return (
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                </ol>
+                );
+            }
+        }
+        //estructura de los componentes actual
+        const Listado2 = () => {
+            return(
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                </ol>
+            );
+        }
+        root.render(
+            <div>
+               <Listado2 />
+            </div>  
+        )
     </script>
 </body>
 </html>
