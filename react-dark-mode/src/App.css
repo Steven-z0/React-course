@@ -1,0 +1,39 @@
+.App {
+  font-family: "Ubuntu", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#light {
+  background-color: #f3ebf6;
+}
+
+#dark {
+  background-color: #46045e;
+}
+
+#light .main {
+  background-color: #fff;
+}
+
+#dark .main {
+  background-color: #38004c;
+}
+
+#light .sign {
+  color: #8c55aa;
+}
+
+#dark .sign {
+  color: #ffffff;
+}
+
+#dark .username,
+#dark .password {
+  color: rgb(254, 255, 255);
+  background: rgba(255, 247, 247, 0.299);
+}
